@@ -113,16 +113,5 @@ This is a simple learning-project setup. Storing a token in `localStorage` is ea
 
 Admin product and category routes are under `/api/admin/products` and `/api/admin/categories`.
 
-## Run the simple checks
-
-From the backend folder:
-
-```bash
-npm test
-npm run check
-```
-
-These checks do not create sample data or change your MongoDB records.
-
 ## Live-Website Link:
 
