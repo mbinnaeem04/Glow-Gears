@@ -9,8 +9,7 @@ A beginner-friendly online store project made with **MongoDB, Express, React, an
 3. Express reads or changes data in MongoDB using Mongoose.
 4. Express sends a response back to React.
 
-The backend setup is kept in one main file: `backend/src/server.js`. A separate `app.js` is useful in larger projects for testing, but this project keeps the setup in one place to make it easier to follow.
-
+The backend setup is kept in one main file: `backend/src/server.js`.
 ## What works
 
 - Create an account and sign in.
@@ -125,10 +124,5 @@ npm run check
 
 These checks do not create sample data or change your MongoDB records.
 
-## Beginner version notes
+## Live-Website Link:
 
-- There is no separate `app.js`; Express setup and route connections are in `server.js`.
-- Login uses a Bearer token instead of cookie setup.
-- Checkout is **cash on delivery only**. There is no Stripe/card payment or payment-status screen.
-- Order stock updates use simple Mongoose updates, without MongoDB transaction code. This is easier to learn, but a production store should add transactions and stronger checks before handling many simultaneous orders.
-- Some protections used in production apps (such as rate limiting and security headers) were left out to keep the example easier to read. Do not treat this learning version as a fully production-hardened store.
